@@ -12,13 +12,13 @@
     <?php
     if (move_uploaded_file($_FILES["id"]["tmp_name"], "images/" . $_FILES["id"]["name"])) {
         echo "<h2>บันทึกข้อมูลแล้ว</h2>";
-        echo "<center>" . "ชื่อ " . $_POST['firstname'] . " นามสกุล " . $_POST['lastname'] . "</center>";
+        echo "ชื่อ " . $_POST['fsname'] . " นามสกุล " . $_POST['lsname'];
         echo "<br>";
-        echo "<center>" . "ที่อยู่ " . $_POST['address'] . "</center>";
+        echo "ที่อยู่ " . $_POST['address'];
         echo "<br>";
     }
     ?>
-    <img src="<?php echo "images/".$_FILES["id"]["name"]; ?>" width="300" >
+    <img src="<?php echo "images/" . $_FILES["id"]["name"];  ?>" alt="" width="300">
 </body>
 
 </html>
